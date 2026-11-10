@@ -332,4 +332,77 @@ body::after {
         font-size: 1.1rem;
         letter-spacing: 0.06em;
     }
+
+    /* ---------- Top link bar ---------- */
+.top-links {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3.5rem;
+    background: var(--bg);
+}
+
+.top-links a {
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.top-links a:hover,
+.top-links a:focus-visible {
+    color: var(--bar-hover);
+    outline: none;
+}
+
+@media (min-width: 901px) {
+    .page { height: calc(100vh - 3.5rem); }
+    .main-content { height: calc(100vh - 3.5rem); }
+    .main-content.index-content { max-height: calc(100vh - 3.5rem); }
+}
+
+@media (max-width: 900px) {
+    .top-links a {
+        font-size: clamp(0.55rem, 2.6vw, 1rem);
+        letter-spacing: 0.08em;
+    }
+}
+
+.viewer {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    text-align: center;
+}
+
+.viewer h1 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+}
+
+.viewer img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.viewer iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+.viewer p {
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+}
 }
