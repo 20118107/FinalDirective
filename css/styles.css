@@ -332,8 +332,8 @@ body::after {
         font-size: 1.1rem;
         letter-spacing: 0.06em;
     }
+}
 
-    /* ---------- Top link bar ---------- */
 .top-links {
     position: relative;
     z-index: 2;
@@ -405,4 +405,4 @@ body::after {
     font-size: 1.3rem;
     letter-spacing: 0.1em;
 }
-}
+
